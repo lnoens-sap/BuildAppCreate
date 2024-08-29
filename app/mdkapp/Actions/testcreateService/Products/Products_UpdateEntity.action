@@ -1,0 +1,18 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/mdkapp/Services/testcreateService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "name": "#Control:name/#Value",
+        "price": "#Control:price/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/mdkapp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/mdkapp/Actions/UpdateEntityFailureMessage.action"
+}

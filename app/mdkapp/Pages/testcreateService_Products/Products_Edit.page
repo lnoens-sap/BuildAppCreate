@@ -1,0 +1,53 @@
+{
+	"Caption": "Update Products Detail",
+	"DesignTimeTarget": {
+		"Service": "/mdkapp/Services/testcreateService.service",
+		"EntitySet": "Products",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/mdkapp/Rules/testcreateService/Products/Products_Cancel.js"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/mdkapp/Rules/testcreateService/Products/Products_UpdateEntity.js"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "name",
+							"_Name": "name",
+							"Value": "{name}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "price",
+							"_Name": "price",
+							"Value": "{price}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_Edit",
+	"PrefersLargeCaption": true
+}

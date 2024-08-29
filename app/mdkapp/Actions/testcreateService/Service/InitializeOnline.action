@@ -1,0 +1,9 @@
+{
+    "Service": "/mdkapp/Services/testcreateService.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/mdkapp/Actions/testcreateService/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}
